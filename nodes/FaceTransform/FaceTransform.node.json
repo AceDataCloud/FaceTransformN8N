@@ -1,0 +1,10 @@
+{
+  "node": "@acedatacloud/n8n-nodes-face-transform.faceTransform",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Marketing & Content"],
+  "resources": {
+    "primaryDocumentation": [{ "url": "https://github.com/AceDataCloud/FaceTransformN8N#quick-start" }],
+    "credentialDocumentation": [{ "url": "https://github.com/AceDataCloud/FaceTransformN8N#credentials" }]
+  }
+}

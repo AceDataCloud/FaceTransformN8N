@@ -1,0 +1,18 @@
+{
+  "id": "aceFaceTransformSmokeTest",
+  "name": "Face Transform credential boundary smoke test",
+  "nodes": [
+    { "parameters": {}, "id": "start", "name": "Start", "type": "n8n-nodes-base.manualTrigger", "typeVersion": 1, "position": [0, 0] },
+    {
+      "parameters": {
+        "operation": "analyze",
+        "imageUrl": "https://platform2.cdn.acedata.cloud/seedream/00355681-7e81-49a4-a8fc-d2165fe1e9fd.jpg",
+        "mode": 1,
+        "rotateDetection": false
+      },
+      "id": "face", "name": "Face Transform", "type": "@acedatacloud/n8n-nodes-face-transform.faceTransform", "typeVersion": 1, "position": [240, 0]
+    }
+  ],
+  "connections": { "Start": { "main": [[{ "node": "Face Transform", "type": "main", "index": 0 }]] } },
+  "settings": { "executionOrder": "v1" }
+}

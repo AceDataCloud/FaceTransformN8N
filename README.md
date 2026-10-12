@@ -1,6 +1,6 @@
 # Face Transform for n8n: first face analysis
 
-Analyze facial keypoints in an image you are authorized to use. This package connects n8n to the single [Ace Data Cloud Face Transform service](https://platform.acedata.cloud/models). The screenshots below show an actual self-hosted n8n 2.42.3 instance in English. n8n Creator Portal verification is pending.
+Analyze facial keypoints in an image you are authorized to use. This package connects n8n to the single [Ace Data Cloud Face Transform service](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=facetransformn8n_readme_pricing). The screenshots below show an actual self-hosted n8n 2.42.3 instance in English. n8n Creator Portal verification is pending.
 
 **Package:** `@acedatacloud/n8n-nodes-face-transform` · **Source:** [FaceTransformN8N](https://github.com/AceDataCloud/FaceTransformN8N) · **Privacy:** [PRIVACY.md](PRIVACY.md)
 
@@ -16,7 +16,9 @@ n8n Cloud shows verified community nodes in its picker after approval. Check the
 
 ### 2. Get a Key with Face Transform access
 
-1. Sign in at [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications).
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+1. Sign in at [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=facetransformn8n_readme_api_key).
 2. Open **General application** and copy its API key, or choose **Manage Keys → Create** to issue a separate n8n key.
 3. Check Face Transform access, current pricing and balance. If you enable **Allowed APIs**, include `/face/analyze` for the first workflow. Add other `/face/*` paths only for operations you use.
 
@@ -70,4 +72,4 @@ The same node offers **Beautify**, **Change Age**, **Change Gender**, **Swap Fac
 | 429 | Reduce concurrency and check service limits. Keep automatic retries off. |
 | Timeout or 5xx | Inspect the original request and usage history before resubmitting; the first request might have been charged. |
 
-Only process images with permission. Face Transform APIs are currently in Alpha, so review the current [API documentation and pricing](https://platform.acedata.cloud/models) when building a production workflow. [Report an issue](https://github.com/AceDataCloud/FaceTransformN8N/issues) · dev@acedata.cloud
+Only process images with permission. Face Transform APIs are currently in Alpha, so review the current [API documentation and pricing](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=facetransformn8n_readme_pricing) when building a production workflow. [Report an issue](https://github.com/AceDataCloud/FaceTransformN8N/issues) · dev@acedata.cloud

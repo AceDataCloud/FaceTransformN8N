@@ -1,6 +1,6 @@
 {
   "name": "@acedatacloud/n8n-nodes-face-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Analyze and transform faces in n8n through the Ace Data Cloud Face Transform service.",
   "license": "MIT",
   "homepage": "https://github.com/AceDataCloud/FaceTransformN8N",

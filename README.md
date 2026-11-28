@@ -32,7 +32,7 @@ Copy only the application token. Do not include `Bearer ` or quotation marks. Ke
 
 ### 3. Save the credential in n8n
 
-Create a workflow and add **Face Transform by Ace Data Cloud**. In **Credential**, select **Connect to Face Transform by Ace Data Cloud API** and **Create new credential**. Paste the token into **API Token** and save. Set **Allowed HTTP Request Domains** to **Specific Domains → `api.acedata.cloud`** for a narrowly scoped credential. n8n stores the masked token and sends the Bearer header.
+Create a workflow and add **Face Transform**. In **Credential**, select **Connect to Face Transform API** and **Create new credential**. Paste the token into **API Token** and save. Set **Allowed HTTP Request Domains** to **Specific Domains → `api.acedata.cloud`** for a narrowly scoped credential. n8n stores the masked token and sends the Bearer header.
 
 The credential test uses the free `/openai/models` metadata route. It checks whether the token works, while the first Face Transform execution checks service access.
 

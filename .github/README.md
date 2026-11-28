@@ -18,7 +18,7 @@ n8n Cloud shows verified community nodes in its picker after approval. Check the
 
 ### 2. Get a Key with Face Transform access
 
-New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+Sign in to Applications and copy the API key from the General Application card.
 
 1. Sign in at [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=facetransformn8n_readme_api_key).
 2. Open **General application** and copy its API key, or choose **Manage Keys → Create** to issue a separate n8n key.

@@ -204,14 +204,14 @@ function requestFailure(error: unknown): OperationalError {
 
 export class FaceTransform implements INodeType {
   description: INodeTypeDescription = {
-    displayName: 'Face Transform by Ace Data Cloud',
+    displayName: 'Face Transform',
     name: 'faceTransform',
     icon: { light: 'file:icon.svg', dark: 'file:icon.dark.svg' },
     group: ['transform'],
     version: 1,
     subtitle: '={{$parameter["operation"]}}',
     description: 'Analyze and transform faces through Ace Data Cloud',
-    defaults: { name: 'Face Transform by Ace Data Cloud' },
+    defaults: { name: 'Face Transform' },
     inputs: [NodeConnectionTypes.Main],
     outputs: [NodeConnectionTypes.Main],
     usableAsTool: true,
@@ -229,7 +229,7 @@ export class FaceTransform implements INodeType {
           hasToken = typeof credentials.apiToken === 'string' && Boolean(credentials.apiToken.trim());
         } catch { /* n8n did not provide a credential. */ }
         if (!hasToken)
-          throw new NodeOperationError(this.getNode(), 'A Face Transform by Ace Data Cloud credential is required.');
+          throw new NodeOperationError(this.getNode(), 'A Face Transform credential is required.');
         const { path, body } = faceRequest((name) => this.getNodeParameter(name, index, ''));
         let response: unknown;
         try {

@@ -2,7 +2,7 @@ import type { IAuthenticateGeneric, ICredentialTestRequest, ICredentialType, INo
 
 export class AceDataFaceTransformApi implements ICredentialType {
   name = 'aceDataFaceTransformApi';
-  displayName = 'Face Transform by Ace Data Cloud API';
+  displayName = 'Face Transform API';
   documentationUrl = 'https://github.com/AceDataCloud/FaceTransformN8N#credentials';
   icon = 'file:../nodes/FaceTransform/icon.svg' as const;
   properties: INodeProperties[] = [
